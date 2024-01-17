@@ -32,6 +32,7 @@ Si eres nuevo en Pau, sigue estos pasos para comenzar:
 ## Nivel 0
 
 Para este primer ejecicio toma en cuenta que importante parametrizar correctamente el archivo '.env', que se se encuentra en la carpeta 'connectionDB/', no es necesario agregar ningun tipo de comilla a los valores. Ademas es importante mencionar que se uso una base de datos de PostgreSQL
+---
 
 
 <br><br><br>
