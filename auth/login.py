@@ -50,7 +50,7 @@ class Login:
                     if fail_attempts > 3: # If the user has failed more than 3 times
                         Connection().block_user(username)
                         attempts_by_user = Connection().validate_attemps(username)
-                        Clear_console(); print(f"\n{msg_user_blocked}\nDebe esperar el tiempo estimado ({minutes_x} min) e intentar de nuevo\nHora de desbloqueo estimada: {attempts_by_user}. \nHora actual: {datetime.utcnow()}")
+                        Clear_console(); print(f"\n{msg_user_blocked}\nDebe esperar el tiempo estimado ({minutes_x} min) e intentar de nuevo\nHora de desbloqueo estimada: {attempts_by_user.time_last_attempt}. \nHora actual: {datetime.utcnow()}")
                         exit(0)
                     else: return 0
 
